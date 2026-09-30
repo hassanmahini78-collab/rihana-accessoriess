@@ -1,140 +1,390 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#6d503b">
-<title>Rihana Accessories | فروشگاه اکسسوری</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
-:root{--bg:#f7f0e7;--surface:#fffdf9;--soft:#eee0cf;--line:#e3d2bf;--brown:#5c4230;--dark:#3d2b20;--gold:#ae8752;--muted:#806c5a;--green:#68755d;--shadow:0 14px 40px rgba(76,52,34,.09)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--dark);font-family:Vazirmatn,Tahoma,sans-serif}
-button,input,select{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}.container{width:min(1240px,calc(100% - 32px));margin:auto}
-.topbar{background:var(--dark);color:#fff;font-size:12px;padding:7px 0}.topbar .container{display:flex;justify-content:space-between}
-header{background:rgba(255,253,249,.97);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:blur(12px)}
-.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{font-family:"Playfair Display",serif;font-style:italic;font-size:42px;line-height:.65;text-align:center;white-space:nowrap}.brand small{display:block;font:9px Vazirmatn;letter-spacing:4px;margin-top:13px}
-.navlinks{display:flex;gap:22px;font-size:13px}.navlinks a{padding:28px 0;border-bottom:2px solid transparent}.navlinks a:hover,.navlinks a.active{border-color:var(--gold);color:var(--gold)}
-.navtools{display:flex;align-items:center;gap:10px}.search{width:205px;border:1px solid var(--line);border-radius:25px;padding:9px 15px;background:#fff}.tool{border:0;background:transparent;font-size:20px;position:relative}.badge{position:absolute;top:-4px;left:-5px;background:var(--brown);color:#fff;border-radius:50%;font-size:9px;width:17px;height:17px;display:grid;place-items:center}
-.hero{margin-top:15px;min-height:460px;border-radius:14px;overflow:hidden;position:relative;background:linear-gradient(90deg,rgba(247,240,231,.08),rgba(247,240,231,.95) 66%),url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1700&q=88') left center/cover;box-shadow:var(--shadow)}
-.hero-content{position:absolute;right:7%;top:70px;width:43%;text-align:center}.script{font:italic 74px "Playfair Display"}.hero h1{font-size:31px;margin:25px 0 7px}.hero p{color:var(--muted);font-size:15px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:25px;padding:12px 26px;background:var(--brown);color:#fff;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.light{background:#ead9c5;color:var(--brown)}
-.features{display:grid;grid-template-columns:repeat(5,1fr);margin:15px 0 30px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}.feature{text-align:center;padding:18px;border-left:1px solid var(--line)}.feature:last-child{border:0}.feature .ico{font-size:24px}.feature b{display:block;font-size:13px}.feature span{font-size:11px;color:var(--muted)}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:18px}.main{min-width:0}.sidebar{position:sticky;top:100px;height:max-content}
-.box{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:18px;box-shadow:0 6px 22px rgba(70,45,25,.04)}.box h2,.box h3{margin:0 0 16px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}.section-head h2{font-size:21px;margin:0}.link{font-size:12px;color:var(--muted)}
-.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:18px}.filter{border:1px solid var(--line);background:#fff;border-radius:22px;padding:8px 14px;color:var(--brown)}.filter.active{background:var(--brown);color:#fff}
-.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.card{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden;transition:.22s;position:relative}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.pic{height:215px;background:#ead9c5 center/cover}.fav{position:absolute;top:9px;left:9px;width:34px;height:34px;border:0;border-radius:50%;background:#fff;color:var(--brown);font-size:20px;box-shadow:0 3px 12px #0001}.cardbody{padding:12px}.cardbody h3{font-size:13px;margin:0 0 5px}.meta{font-size:10px;color:var(--muted);margin-bottom:6px}.price{font-weight:700;font-size:14px}.actions{display:flex;gap:8px;margin-top:11px}.add{flex:1;border:0;border-radius:20px;background:var(--brown);color:#fff;padding:8px;font-size:12px}.quick{width:38px;border:1px solid var(--line);border-radius:20px;background:#fff}
-.promo{height:205px;border-radius:11px;overflow:hidden;position:relative;background:linear-gradient(90deg,rgba(101,72,50,.12),rgba(82,58,40,.65)),url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1500&q=85') center/cover;margin-bottom:18px}.promo-text{position:absolute;right:7%;top:35px;color:#fff}.promo-text h2{font-size:26px;margin:0 0 5px}
-.side-contact{background:var(--soft);text-align:center}.phone{direction:ltr;font-size:20px;font-weight:800;display:block;margin:6px 0}.wa{background:#5e7358}
-.side-item{display:flex;gap:9px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.side-item:last-child{border:0}.side-img{width:58px;height:58px;background:center/cover;border-radius:7px;flex:none}.side-item b{font-size:11px}.side-item span{display:block;font-size:10px;color:var(--muted)}
-.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.cat{text-align:center}.cat-img{width:85px;height:85px;margin:auto;border-radius:50%;background:center/cover;border:4px solid #fff;box-shadow:0 3px 15px #0001}.cat p{font-size:12px}
-.newsletter{background:var(--soft);border-radius:12px;padding:30px;text-align:center}.newsletter input{border:1px solid var(--line);padding:12px 16px;border-radius:25px;width:min(330px,80%);margin:10px 5px;background:#fff}
-footer{background:#dfc7ad;margin-top:30px;padding:38px 0 12px}.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;text-align:center}.footer-brand{font:italic 42px "Playfair Display"}.copyright{border-top:1px solid #c9ad91;margin-top:25px;padding-top:12px;text-align:center;font-size:11px}
-.overlay{display:none;position:fixed;inset:0;background:#25170fcc;z-index:100;align-items:center;justify-content:center;padding:18px}.overlay.show{display:flex}.modal{width:min(920px,100%);max-height:90vh;overflow:auto;background:var(--surface);border-radius:16px;position:relative;padding:22px}.close{position:absolute;left:15px;top:12px;border:0;background:none;font-size:25px}.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.modal-img{height:420px;border-radius:10px;background:center/cover}.modal h2{font-size:27px}.qty{display:flex;align-items:center;gap:10px;margin:18px 0}.qty button{width:35px;height:35px;border:1px solid var(--line);background:#fff;border-radius:50%}
-.cart-drawer{position:fixed;top:0;right:0;height:100%;width:min(430px,94vw);background:var(--surface);z-index:110;transform:translateX(110%);transition:.3s;box-shadow:-10px 0 40px #0002;padding:22px;overflow:auto}.cart-drawer.open{transform:translateX(0)}.cart-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px}.cart-row{display:grid;grid-template-columns:65px 1fr auto;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:13px 0}.cart-row img{width:65px;height:65px;object-fit:cover;border-radius:7px}.cart-row h4{font-size:12px;margin:0}.cart-row small{color:var(--muted)}.cart-qty{display:flex;gap:5px;align-items:center}.cart-qty button{width:25px;height:25px;border:1px solid var(--line);background:#fff;border-radius:50%}.cart-total{display:flex;justify-content:space-between;font-size:18px;font-weight:800;padding:20px 0}.checkout{width:100%}.empty{text-align:center;color:var(--muted);padding:50px 10px}
-.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,100px);background:var(--dark);color:#fff;padding:12px 22px;border-radius:25px;z-index:200;transition:.25s}.toast.show{transform:translate(-50%,0)}
-@media(max-width:1000px){.navlinks{display:none}.products{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}.sidebar{display:none}.categories{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:700px){.topbar .container{justify-content:center}.nav{height:68px}.brand{font-size:31px}.brand small{font-size:7px}.search{display:none}.hero{min-height:430px}.hero-content{width:100%;right:0;top:auto;bottom:0;background:#fffdf9dd;padding:25px 10px}.script{font-size:52px}.features{grid-template-columns:repeat(2,1fr)}.feature{border-bottom:1px solid var(--line)}.products{grid-template-columns:repeat(2,1fr);gap:9px}.pic{height:160px}.categories{grid-template-columns:repeat(3,1fr)}.cat-img{width:70px;height:70px}.modal-grid{grid-template-columns:1fr}.modal-img{height:280px}.footer-grid{grid-template-columns:1fr}}
-@media(max-width:420px){.container{width:calc(100% - 20px)}.products{grid-template-columns:1fr 1fr}.cardbody{padding:9px}.pic{height:145px}.hero h1{font-size:24px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ابزار بندر - فروش انواع ابزارآلات">
+  <title>ابزار بندر | فروشگاه ابزار</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="topbar"><div class="container"><span>ارسال به سراسر کشور</span><span>پشتیبانی و سفارش: 09333422825</span></div></div>
-<header>
-<div class="container nav">
-<nav class="navlinks"><a class="active" href="#home">خانه</a><a href="#shop">فروشگاه</a><a href="#categories">دسته‌بندی‌ها</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></nav>
-<a class="brand" href="#home">Rihana<small>ACCESSORIES</small></a>
-<div class="navtools"><input id="search" class="search" placeholder="جستجو در محصولات..."><button class="tool" onclick="openCart()">🛍️<span id="badge" class="badge">0</span></button></div>
-</div>
+
+<header class="header">
+  <div class="container nav">
+
+    <a href="#" class="logo">
+      <span>🔧</span>
+      ابزار بندر
+    </a>
+
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#products">محصولات</a>
+      <a href="#categories">دسته‌بندی</a>
+      <a href="#about">درباره ما</a>
+      <a href="#contact">تماس با ما</a>
+    </nav>
+
+    <button class="cart-btn" onclick="openCart()">
+      🛒 سبد خرید
+      <span id="cartCount">0</span>
+    </button>
+
+  </div>
 </header>
 
-<main id="home" class="container">
-<section class="hero">
-<div class="hero-content"><div class="script">Rihana</div><div style="letter-spacing:5px">ACCESSORIES</div><h1>زیبایی در جزئیات</h1><p>هر اکسسوری برای خاطره‌ساز شدن لحظه‌های تو</p><a class="btn" href="#shop">مشاهده محصولات ←</a></div>
+
+<main>
+
+<section id="home" class="hero">
+  <div class="container hero-content">
+
+    <div>
+      <span class="badge">فروش تخصصی ابزارآلات</span>
+
+      <h1>
+        ابزار حرفه‌ای،
+        <strong>برای کار حرفه‌ای</strong>
+      </h1>
+
+      <p>
+        خرید انواع ابزار دستی، برقی و تجهیزات کارگاهی
+        با ارسال به سراسر کشور
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#products" class="primary-btn">مشاهده محصولات</a>
+        <a href="#contact" class="secondary-btn">تماس با ما</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      🔨
+      <div class="tool-circle">⚙️</div>
+      <div class="tool-circle circle2">🔧</div>
+    </div>
+
+  </div>
 </section>
 
-<div class="features">
-<div class="feature"><div class="ico">🚚</div><b>ارسال سریع</b><span>به سراسر کشور</span></div>
-<div class="feature"><div class="ico">🛡️</div><b>ضمانت کیفیت</b><span>محصولات</span></div>
-<div class="feature"><div class="ico">♡</div><b>پشتیبانی</b><span>قبل و بعد از خرید</span></div>
-<div class="feature"><div class="ico">🎁</div><b>بسته‌بندی شیک</b><span>مناسب هدیه</span></div>
-<div class="feature"><div class="ico">📞</div><b>تماس با ما</b><span>09333422825</span></div>
-</div>
 
-<div class="layout">
-<div class="main">
-<section class="box" id="shop">
-<div class="section-head"><h2>💎 فروشگاه Rihana</h2><span id="resultCount" class="link"></span></div>
-<div class="toolbar"><button class="filter active" data-cat="همه">همه</button><button class="filter" data-cat="گردنبند">گردنبند</button><button class="filter" data-cat="دستبند">دستبند</button><button class="filter" data-cat="گوشواره">گوشواره</button><button class="filter" data-cat="انگشتر">انگشتر</button><select id="sort" class="filter"><option value="default">مرتب‌سازی</option><option value="low">ارزان‌ترین</option><option value="high">گران‌ترین</option></select></div>
-<div id="products" class="products"></div>
+<section id="categories" class="section">
+  <div class="container">
+
+    <div class="section-title">
+      <span>دسته‌بندی محصولات</span>
+      <h2>ابزار مورد نیازت را پیدا کن</h2>
+    </div>
+
+    <div class="categories">
+
+      <button onclick="filterCategory('همه')">
+        <span>🛠️</span>
+        همه ابزارها
+      </button>
+
+      <button onclick="filterCategory('ابزار دستی')">
+        <span>🔧</span>
+        ابزار دستی
+      </button>
+
+      <button onclick="filterCategory('ابزار برقی')">
+        <span>⚡</span>
+        ابزار برقی
+      </button>
+
+      <button onclick="filterCategory('اندازه گیری')">
+        <span>📏</span>
+        اندازه‌گیری
+      </button>
+
+      <button onclick="filterCategory('تجهیزات')">
+        <span>🧰</span>
+        تجهیزات
+      </button>
+
+    </div>
+
+  </div>
 </section>
 
-<section class="promo"><div class="promo-text"><h2>جزئیاتی که تکمیل‌کننده استایل توست...</h2><p>هدیه‌ای برای لحظه‌های خاص ♡</p><a class="btn light" href="#shop">مشاهده محصولات</a></div></section>
 
-<section class="box" id="categories"><div class="section-head"><h2>دسته‌بندی‌ها</h2></div><div class="categories">
-<div class="cat"><div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=300&q=80')"></div><p>گردنبند</p></div>
-<div class="cat"><div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=300&q=80')"></div><p>دستبند</p></div>
-<div class="cat"><div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=300&q=80')"></div><p>گوشواره</p></div>
-<div class="cat"><div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=300&q=80')"></div><p>انگشتر</p></div>
-<div class="cat"><div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=300&q=80')"></div><p>اکسسوری مو</p></div>
-<div class="cat"><div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?auto=format&fit=crop&w=300&q=80')"></div><p>ست‌ها</p></div>
-</div></section>
+<section id="products" class="section products-section">
 
-<section class="newsletter" id="about"><div class="script" style="font-size:48px">Rihana</div><h2>برای خبرهای جدید همراه ما باش</h2><p>محصولات جدید و پیشنهادهای ویژه را از دست نده.</p><input id="email" type="email" placeholder="ایمیل شما"><button class="btn" onclick="subscribe()">عضویت</button></section>
-</div>
+  <div class="container">
 
-<aside class="sidebar">
-<div class="box side-contact" id="contact"><h3>تماس با ما</h3><span class="phone">09333422825</span><a class="btn wa" href="https://wa.me/989333422825" target="_blank">واتساپ ↗</a></div>
-<div class="box"><h3>🏆 پرفروش‌ترین‌ها</h3><div id="sideList"></div></div>
-<div class="box"><h3>🎁 بسته‌بندی هدیه</h3><img style="width:100%;border-radius:8px" src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=500&q=85"><p style="font-size:12px;color:var(--muted)">هر سفارش با بسته‌بندی شیک و مناسب هدیه آماده می‌شود.</p></div>
-</aside>
-</div>
+    <div class="products-top">
+
+      <div class="section-title">
+        <span>محصولات فروشگاه</span>
+        <h2>محصولات ابزار بندر</h2>
+      </div>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="جستجوی ابزار..."
+          oninput="searchProducts()"
+        >
+        🔍
+      </div>
+
+    </div>
+
+    <div id="productsGrid" class="products-grid"></div>
+
+  </div>
+
+</section>
+
+
+<section id="about" class="section about">
+
+  <div class="container about-box">
+
+    <div>
+      <span class="badge">درباره ابزار بندر</span>
+
+      <h2>همراه شما در انتخاب ابزار مناسب</h2>
+
+      <p>
+        ابزار بندر با هدف ارائه ابزارهای کاربردی و باکیفیت
+        برای تعمیرکاران، صنعتگران، کارگاه‌ها و مصرف‌کنندگان
+        فعالیت می‌کند.
+      </p>
+
+      <div class="features">
+        <div>✓ تنوع ابزار</div>
+        <div>✓ ارسال سفارش</div>
+        <div>✓ پشتیبانی تلفنی</div>
+        <div>✓ ثبت سفارش آنلاین</div>
+      </div>
+
+    </div>
+
+    <div class="about-icon">
+      🧰
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="contact" class="section contact">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>ارتباط با ما</span>
+      <h2>تماس با ابزار بندر</h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div>📞</div>
+        <h3>شماره تماس</h3>
+        <a href="tel:09170824124">09170824124</a>
+      </div>
+
+      <div class="contact-card">
+        <div>📍</div>
+        <h3>آدرس</h3>
+        <p>بوشهر، دلوار، روبروی بانک ملت</p>
+      </div>
+
+      <div class="contact-card">
+        <div>🛒</div>
+        <h3>ثبت سفارش</h3>
+        <p>به‌صورت آنلاین از طریق سایت</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 </main>
 
-<footer><div class="container footer-grid"><div><div class="footer-brand">Rihana</div><p>ACCESSORIES</p></div><div><h3>دسترسی سریع</h3><p>فروشگاه · دسته‌بندی‌ها · درباره ما</p></div><div><h3>ارتباط</h3><p>09333422825</p><p>واتساپ: 09333422825</p></div></div><div class="container copyright">© 2026 Rihana Accessories — تمامی حقوق محفوظ است.</div></footer>
 
-<div id="modal" class="overlay" onclick="if(event.target===this)closeModal()"><div class="modal"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
-<aside id="drawer" class="cart-drawer"><div class="cart-head"><h2>سبد خرید</h2><button class="tool" onclick="closeCart()">×</button></div><div id="cartItems"></div><div class="cart-total"><span>جمع کل</span><span id="total">۰ تومان</span></div><button class="btn checkout" onclick="checkout()">ادامه و ثبت سفارش</button></aside>
-<div id="toast" class="toast"></div>
+<footer>
 
-<script>
-const products=[
-{id:1,name:'گردنبند گل',cat:'گردنبند',price:357000,img:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=88',desc:'گردنبند ظریف و مینیمال مناسب استفاده روزمره و استایل‌های خاص.'},
-{id:2,name:'دستبند ستاره',cat:'دستبند',price:279000,img:'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=88',desc:'دستبند ظریف با طراحی ستاره‌ای برای یک استایل ساده و شیک.'},
-{id:3,name:'گوشواره مروارید',cat:'گوشواره',price:235000,img:'https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=700&q=88',desc:'گوشواره مرواریدی کلاسیک؛ مناسب استفاده روزمره و مهمانی.'},
-{id:4,name:'انگشتر موج',cat:'انگشتر',price:349000,img:'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=88',desc:'انگشتر با فرم موج‌دار و ظاهر مدرن.'},
-{id:5,name:'گوشواره یاسمن',cat:'گوشواره',price:269000,img:'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=88',desc:'مدلی لطیف برای استایل‌های مینیمال و زنانه.'},
-{id:6,name:'انگشتر ساده',cat:'انگشتر',price:219000,img:'https://images.unsplash.com/photo-1603561596112-db2b2dce7e2f?auto=format&fit=crop&w=700&q=88',desc:'یک انتخاب ساده و قابل استفاده با انواع استایل.'},
-{id:7,name:'گردنبند شبنم',cat:'گردنبند',price:349000,img:'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=700&q=88',desc:'گردنبندی ظریف با حس لطیف و کلاسیک.'},
-{id:8,name:'دستبند زنجیری',cat:'دستبند',price:399000,img:'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=88',desc:'دستبند زنجیری شیک برای تکمیل استایل.'}
-];
-let state={cat:'همه',q:'',sort:'default',cart:JSON.parse(localStorage.getItem('rihana_cart')||'[]')};
-const fa=n=>new Intl.NumberFormat('fa-IR').format(n);
-function render(){
-let list=products.filter(p=>(state.cat==='همه'||p.cat===state.cat)&&p.name.includes(state.q));
-if(state.sort==='low')list.sort((a,b)=>a.price-b.price);if(state.sort==='high')list.sort((a,b)=>b.price-a.price);
-document.getElementById('resultCount').textContent=fa(list.length)+' محصول';
-document.getElementById('products').innerHTML=list.map(p=>`<article class="card"><button class="fav" onclick="toggleFav(this)">♡</button><div class="pic" style="background-image:url('${p.img}')"></div><div class="cardbody"><h3>${p.name}</h3><div class="meta">${p.cat} · موجود</div><div class="price">${fa(p.price)} تومان</div><div class="actions"><button class="add" onclick="addCart(${p.id})">افزودن به سبد خرید</button><button class="quick" onclick="openProduct(${p.id})">👁</button></div></div></article>`).join('')||'<div class="empty" style="grid-column:1/-1">محصولی پیدا نشد.</div>';
-document.getElementById('sideList').innerHTML=products.slice(0,4).map(p=>`<div class="side-item"><div class="side-img" style="background-image:url('${p.img}')"></div><div><b>${p.name}</b><span>${fa(p.price)} تومان</span></div></div>`).join('');
-updateCart();
-}
-function addCart(id){let x=state.cart.find(i=>i.id===id);x?x.qty++:state.cart.push({id,qty:1});save();toast('محصول به سبد خرید اضافه شد ✓')}
-function save(){localStorage.setItem('rihana_cart',JSON.stringify(state.cart));updateCart()}
-function updateCart(){document.getElementById('badge').textContent=fa(state.cart.reduce((s,x)=>s+x.qty,0));let el=document.getElementById('cartItems');if(!state.cart.length){el.innerHTML='<div class="empty">سبد خرید شما خالی است ♡</div>';document.getElementById('total').textContent='۰ تومان';return}let total=0;el.innerHTML=state.cart.map(x=>{let p=products.find(p=>p.id===x.id);total+=p.price*x.qty;return `<div class="cart-row"><img src="${p.img}"><div><h4>${p.name}</h4><small>${fa(p.price)} تومان</small><div class="cart-qty"><button onclick="changeQty(${p.id},-1)">−</button>${fa(x.qty)}<button onclick="changeQty(${p.id},1)">+</button></div></div><button class="tool" onclick="removeCart(${p.id})">🗑</button></div>`}).join('');document.getElementById('total').textContent=fa(total)+' تومان'}
-function changeQty(id,d){let x=state.cart.find(i=>i.id===id);x.qty+=d;if(x.qty<=0)state.cart=state.cart.filter(i=>i.id!==id);save()}
-function removeCart(id){state.cart=state.cart.filter(i=>i.id!==id);save()}
-function openCart(){document.getElementById('drawer').classList.add('open')}
-function closeCart(){document.getElementById('drawer').classList.remove('open')}
-function openProduct(id){let p=products.find(x=>x.id===id);document.getElementById('modalContent').innerHTML=`<div class="modal-grid"><div class="modal-img" style="background-image:url('${p.img}')"></div><div><div class="meta">${p.cat}</div><h2>${p.name}</h2><p style="color:var(--muted)">${p.desc}</p><h2>${fa(p.price)} تومان</h2><div class="qty"><button onclick="changeModal(-1)">−</button><b id="modalQty">1</b><button onclick="changeModal(1)">+</button></div><button class="btn" onclick="addModal(${p.id})">افزودن به سبد خرید</button></div></div>`;document.getElementById('modal').classList.add('show')}
-let mq=1;function changeModal(d){mq=Math.max(1,mq+d);document.getElementById('modalQty').textContent=fa(mq)}
-function addModal(id){for(let i=0;i<mq;i++)addCart(id);mq=1;closeModal();openCart()}
-function closeModal(){document.getElementById('modal').classList.remove('show')}
-function toggleFav(el){el.textContent=el.textContent==='♡'?'♥':'♡'}
-function toast(msg){let t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
-function checkout(){if(!state.cart.length)return toast('سبد خرید خالی است');window.open('https://wa.me/989333422825?text='+encodeURIComponent('سلام، برای ثبت سفارش از Rihana Accessories پیام می‌دهم.'),'_blank')}
-function subscribe(){let e=document.getElementById('email').value;if(!e)return toast('ایمیل خود را وارد کنید');toast('عضویت شما ثبت شد ✓');document.getElementById('email').value=''}
-document.querySelectorAll('.filter[data-cat]').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter[data-cat]').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.cat=b.dataset.cat;render()});
-document.getElementById('sort').onchange=e=>{state.sort=e.target.value;render()};
-document.getElementById('search').oninput=e=>{state.q=e.target.value.trim();render()};
-render();
-</script>
+  <div class="container footer">
+
+    <div>
+      <div class="footer-logo">🔧 ابزار بندر</div>
+      <p>فروش انواع ابزارآلات و تجهیزات</p>
+    </div>
+
+    <div>
+      <h3>دسترسی سریع</h3>
+      <a href="#home">خانه</a>
+      <a href="#products">محصولات</a>
+      <a href="#contact">تماس با ما</a>
+    </div>
+
+    <div>
+      <h3>تماس</h3>
+      <p>📞 09170824124</p>
+      <p>📍 بوشهر، دلوار، روبروی بانک ملت</p>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 ابزار بندر - تمامی حقوق محفوظ است.
+  </div>
+
+</footer>
+
+
+<!-- CART -->
+
+<div id="cartModal" class="modal">
+
+  <div class="modal-box">
+
+    <button class="close" onclick="closeCart()">×</button>
+
+    <h2>🛒 سبد خرید</h2>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+      <span>مبلغ کل:</span>
+      <strong id="cartTotal">0 تومان</strong>
+    </div>
+
+    <button class="checkout-btn" onclick="openCheckout()">
+      ادامه ثبت سفارش
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- CHECKOUT -->
+
+<div id="checkoutModal" class="modal">
+
+  <div class="modal-box checkout-box">
+
+    <button class="close" onclick="closeCheckout()">×</button>
+
+    <div id="checkoutForm">
+
+      <h2>📦 اطلاعات ارسال سفارش</h2>
+
+      <p class="form-note">
+        لطفاً اطلاعات زیر را با دقت وارد کنید.
+      </p>
+
+      <label>نام و نام خانوادگی *</label>
+      <input id="customerName" type="text" placeholder="مثلاً علی احمدی">
+
+      <label>شماره موبایل *</label>
+      <input id="customerPhone" type="tel" placeholder="0912xxxxxxx">
+
+      <label>استان *</label>
+      <input id="customerProvince" type="text" placeholder="استان">
+
+      <label>شهر *</label>
+      <input id="customerCity" type="text" placeholder="شهر">
+
+      <label>آدرس کامل *</label>
+      <textarea
+        id="customerAddress"
+        placeholder="خیابان، کوچه، پلاک، واحد..."
+      ></textarea>
+
+      <label>کد پستی *</label>
+      <input id="customerPostal" type="text" placeholder="۱۰ رقم">
+
+      <label>توضیحات سفارش</label>
+      <textarea
+        id="customerNote"
+        placeholder="توضیحات اضافی در صورت نیاز..."
+      ></textarea>
+
+      <button class="checkout-btn" onclick="goToPayment()">
+        ادامه و پرداخت
+      </button>
+
+    </div>
+
+
+    <div id="paymentPage" class="payment-page">
+
+      <div class="payment-icon">💳</div>
+
+      <h2>پرداخت سفارش</h2>
+
+      <p>
+        مبلغ سفارش خود را به شماره کارت زیر واریز کنید.
+      </p>
+
+      <div class="card-number">
+        0000 0000 0000 0000
+      </div>
+
+      <small>
+        شماره کارت فروشگاه
+      </small>
+
+      <div class="payment-total">
+        مبلغ قابل پرداخت:
+        <strong id="paymentTotal"></strong>
+      </div>
+
+      <div class="payment-warning">
+        ⚠️ پس از واریز، اطلاعات پرداخت را نزد خود نگه دارید
+        و برای پیگیری سفارش با فروشگاه تماس بگیرید.
+      </div>
+
+      <button class="copy-card" onclick="copyCard()">
+        📋 کپی شماره کارت
+      </button>
+
+      <button class="final-btn" onclick="finishOrder()">
+        پرداخت را انجام دادم
+      </button>
+
+    </div>
+
+
+    <div id="successPage" class="success-page">
+
+      <div class="success-icon">✓</div>
+
+      <h2>سفارش شما ثبت شد</h2>
+
+      <p>
+        اطلاعات سفارش شما با موفقیت ثبت شد.
+      </p>
+
+      <p>
+        برای پیگیری سفارش با شماره
+        <strong>09170824124</strong>
+        تماس بگیرید.
+      </p>
+
+      <button class="checkout-btn" onclick="location.reload()">
+        بازگشت به فروشگاه
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
